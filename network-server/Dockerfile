@@ -19,7 +19,7 @@ COPY scripts /scripts
 
 # Install Chirpstack service
 RUN /build/prepare_chirpstack.sh
-RUN apt-get install -y chirpstack
+RUN apt install -y chirpstack
 COPY conf/config.toml /etc/${SERVICE}/${SERVICE}.toml
 COPY conf/region_eu868.toml /etc/${SERVICE}/region_eu868.toml
 
