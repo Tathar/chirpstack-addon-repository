@@ -8,6 +8,7 @@ startup: application
 boot: auto
 homeassistant_api: true
 apparmor: true
+init: false
 panel_icon: mdi:radio-tower
 panel_title: ChirpStack Application Server
 options:
