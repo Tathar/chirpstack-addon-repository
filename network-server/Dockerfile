@@ -21,6 +21,7 @@ COPY scripts /scripts
 RUN /build/prepare_chirpstack.sh
 RUN apt-get install -y ${SERVICE}
 COPY conf/config.toml /etc/${SERVICE}/${SERVICE}.toml
+COPY conf/region_eu868.toml /etc/${SERVICE}/region_eu868.toml
 
 # Cleanup
 # RUN apt-get remove -y ${BUILD_DEPS}
