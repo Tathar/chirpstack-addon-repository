@@ -7,6 +7,7 @@
 apt-get install -y crudini
 
 # Prepare Chirpstack packages
+apt install apt-transport-https dirmngr
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1CE2AFD36DBCCA00
-echo "deb https://artifacts.chirpstack.io/packages/3.x/deb stable main" | tee /etc/apt/sources.list.d/chirpstack.list
+echo "deb https://artifacts.chirpstack.io/packages/4.x/deb stable main" | sudo tee /etc/apt/sources.list.d/chirpstack.list
 apt-get update
