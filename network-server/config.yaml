@@ -8,6 +8,7 @@ startup: application
 boot: auto
 homeassistant_api: true
 apparmor: true
+init: false
 panel_icon: mdi:access-point-network
 panel_title: ChirpStack Network Server
 options:
