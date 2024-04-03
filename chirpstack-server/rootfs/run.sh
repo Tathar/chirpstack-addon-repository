@@ -23,10 +23,10 @@ bashio::log.info "Starting redis-server..."
 service redis-server start
 
 bashio::log.info "Starting chirpstack-gateway-bridge..."
-sed "s|^    server=.*$|    server=\"${mqtt_server}\"|g" /etc/chirpstack-gateway-bridge/chirpstack-gateway-bridge.toml
+sed -i "s|^    server=.*$|    server=\"${mqtt_server}\"|g" /etc/chirpstack-gateway-bridge/chirpstack-gateway-bridge.toml
 service chirpstack-gateway-bridge start
 
 bashio::log.info "Starting chirpstack..."
-sed "s|^    server=.*$|    server=\"${mqtt_server}\"|g" /etc/chirpstack/*.toml
+sed -is "s|^ *server=.*$|    server=\"${mqtt_server}\"|g" /etc/chirpstack/*.toml
 
 /usr/bin/chirpstack -c /etc/chirpstack/

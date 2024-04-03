@@ -11,7 +11,7 @@ webui: "http://[HOST]:[PORT:8080]/"
 homeassistant_api: true
 # apparmor: true
 options:
-  mqtt_server: "tcp://127.0.0.1:1883/"
+  mqtt_server: "tcp://core-mosquitto:1883/"
 schema:
   mqtt_server: str
 ports:
@@ -20,6 +20,5 @@ ports:
 ports_description:
   8080/tcp: Web interface
   1700/udp: ChirpStack Gateway port
-startup: system
 watchdog: tcp://[HOST]:8080
 init: false
