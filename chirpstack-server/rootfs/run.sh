@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 
-mqtt_server="tcp://Ligne1703:Iris2024@192.168.21.1:1883"
+mqtt_server="tcp://127.0.0.1:1883"
 if bashio::config.has_value "mqtt_server"; then
     mqtt_server=$(bashio::config "mqtt_server")
 fi
@@ -9,6 +9,12 @@ region="eu868"
 if bashio::config.has_value "region_gateway"; then
     region=$(bashio::config "region_gateway")
     echo ${region}
+fi
+
+secret="eTtWjTbT03lVof0JhdMANp3JKUXoSxTayHr6mDk9pzE="
+if bashio::config.has_value "secret"; then
+    secret=$(bashio::config "secret")
+    echo ${secret}
 fi
 
 bashio::log.info "Starting postgresql..."
@@ -34,6 +40,8 @@ service chirpstack-gateway-bridge start
 
 bashio::log.info "Starting chirpstack..."
 sed -i "s|__server__|${mqtt_server}|g" /diff/chirpstack.diff
+sed -i "s|__secret__|${secret}|g" /diff/chirpstack.diff
+sed -i "s|__region__|${region}|g" /diff/chirpstack.diff
 patch -d /etc/chirpstack/ -i /diff/chirpstack.diff
 
 /usr/bin/chirpstack -c /etc/chirpstack/

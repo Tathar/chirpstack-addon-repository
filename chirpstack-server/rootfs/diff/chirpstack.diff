@@ -1,13 +1,45 @@
 diff --unified --recursive --no-dereference /data/files/chirpstack.toml /etc/chirpstack/chirpstack.toml
 --- /data/files/chirpstack.toml	2024-04-03 10:54:46.950962300 +0000
 +++ /etc/chirpstack/chirpstack.toml	2024-04-03 12:03:08.186363636 +0000
-@@ -99,5 +99,5 @@
+@@ -62,21 +62,7 @@
+   # Multiple regions can be enabled simultaneously. Each region must match
+   # the 'name' parameter of the region configuration in '[[regions]]'.
+   enabled_regions=[
+-    "as923",
+-    "as923_2",
+-    "as923_3",
+-    "as923_4",
+-    "au915_0",
+-    "cn470_10",
+-    "cn779",
+-    "eu433",
+-    "eu868",
+-    "in865",
+-    "ism2400",
+-    "kr920",
+-    "ru864",
+-    "us915_0",
+-    "us915_1",
++   "__region__",
+   ]
+
+
+@@ -92,12 +78,12 @@
+   # is never exposed. Changing this secret will invalidate all login and API
+   # tokens. The following command can be used to generate a random secret:
+   #   openssl rand -base64 32
+-  secret="you-must-replace-this"
++  secret="__secret__"
+
+
+ [integration]
    enabled=["mqtt"]
  
    [integration.mqtt]
 -    server="tcp://localhost:1883/"
+-    json=true
 +    server="__server__"
-     json=true
++    json=true
 Only in /etc/chirpstack/: chirpstack.tomls
 diff --unified --recursive --no-dereference /data/files/region_as923.toml /etc/chirpstack/region_as923.toml
 --- /data/files/region_as923.toml	2024-04-03 10:54:46.961541100 +0000
@@ -348,8 +380,8 @@ diff --unified --recursive --no-dereference /data/files/region_eu433.toml /etc/c
          username=""
 Only in /etc/chirpstack/: region_eu433.tomls
 diff --unified --recursive --no-dereference /data/files/region_eu868.toml /etc/chirpstack/region_eu868.toml
---- /data/files/region_eu868.toml	2024-04-03 10:54:47.130193800 +0000
-+++ /etc/chirpstack/region_eu868.toml	2024-04-03 12:02:59.535156541 +0000
+--- /data/files/region_eu868.toml       2024-04-03 10:54:47.130193800 +0000
++++ /etc/chirpstack/region_eu868.toml   2024-04-03 14:12:50.168669988 +0000
 @@ -48,7 +48,7 @@
          share_name="chirpstack"
  
