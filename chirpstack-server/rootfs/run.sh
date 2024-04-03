@@ -1,15 +1,19 @@
 #!/usr/bin/with-contenv bashio
 
-mqtt_server="tcp://127.0.0.1:1883"
+mqtt_server="tcp://Ligne1703:Iris2024@192.168.21.1:1883"
 if bashio::config.has_value "mqtt_server"; then
     mqtt_server=$(bashio::config "mqtt_server")
-    echo ${mqtt_server}
+fi
+
+region="eu868"
+if bashio::config.has_value "region_gateway"; then
+    region=$(bashio::config "region_gateway")
+    echo ${region}
 fi
 
 bashio::log.info "Starting postgresql..."
 if [ ! -d "/data/database" ]; then
   mv /var/lib/postgresql/13/main /data/database
-#  mkdir /data/database
   chown -R postgres:postgres /data/database
   service postgresql start
   sudo -u postgres psql -c "create role chirpstack with login password 'chirpstack';"
@@ -23,10 +27,13 @@ bashio::log.info "Starting redis-server..."
 service redis-server start
 
 bashio::log.info "Starting chirpstack-gateway-bridge..."
-sed -i "s|^    server=.*$|    server=\"${mqtt_server}\"|g" /etc/chirpstack-gateway-bridge/chirpstack-gateway-bridge.toml
+sed -i "s|__server__|${mqtt_server}|g" /diff/chirpstack-gateway-bridge.diff
+sed -i "s|__region__|${region}|g" /diff/chirpstack-gateway-bridge.diff
+patch /etc/chirpstack-gateway-bridge/chirpstack-gateway-bridge.toml /diff/chirpstack-gateway-bridge.diff
 service chirpstack-gateway-bridge start
 
 bashio::log.info "Starting chirpstack..."
-sed -is "s|^ *server=.*$|    server=\"${mqtt_server}\"|g" /etc/chirpstack/*.toml
+sed -i "s|__server__|${mqtt_server}|g" /diff/chirpstack.diff
+patch -d /etc/chirpstack/ -i /diff/chirpstack.diff
 
 /usr/bin/chirpstack -c /etc/chirpstack/

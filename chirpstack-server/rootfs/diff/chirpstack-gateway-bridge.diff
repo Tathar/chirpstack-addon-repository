@@ -1,0 +1,19 @@
+33c33
+< marshaler="protobuf"
+---
+> marshaler="json"
+38c38,41
+<   event_topic_template="gateway/{{ .GatewayID }}/event/{{ .EventType }}"
+---
+>   event_topic_template="$share/chirpstack/__region__/gateway/{{ .GatewayID }}/event/{{ .EventType }}"
+>   
+>   # State topic template.
+>   state_topic_template="$share/chirpstack/__region__/gateway/{{ .GatewayID }}/state/{{ .StateType }}"
+41c44
+<   command_topic_template="gateway/{{ .GatewayID }}/command/#"
+---
+>   command_topic_template="$share/chirpstack/__region__/gateway/{{ .GatewayID }}/command/#"
+53c56
+<     server="tcp://127.0.0.1:1883"
+---
+>     server="__server__"

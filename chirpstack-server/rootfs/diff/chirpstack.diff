@@ -1,0 +1,518 @@
+diff --unified --recursive --no-dereference /data/files/chirpstack.toml /etc/chirpstack/chirpstack.toml
+--- /data/files/chirpstack.toml	2024-04-03 10:54:46.950962300 +0000
++++ /etc/chirpstack/chirpstack.toml	2024-04-03 12:03:08.186363636 +0000
+@@ -99,5 +99,5 @@
+   enabled=["mqtt"]
+ 
+   [integration.mqtt]
+-    server="tcp://localhost:1883/"
++    server="__server__"
+     json=true
+Only in /etc/chirpstack/: chirpstack.tomls
+diff --unified --recursive --no-dereference /data/files/region_as923.toml /etc/chirpstack/region_as923.toml
+--- /data/files/region_as923.toml	2024-04-03 10:54:46.961541100 +0000
++++ /etc/chirpstack/region_as923.toml	2024-04-03 12:02:59.525156388 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_as923.tomls
+diff --unified --recursive --no-dereference /data/files/region_as923_2.toml /etc/chirpstack/region_as923_2.toml
+--- /data/files/region_as923_2.toml	2024-04-03 10:54:46.969702500 +0000
++++ /etc/chirpstack/region_as923_2.toml	2024-04-03 12:02:59.525156388 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_as923_2.tomls
+diff --unified --recursive --no-dereference /data/files/region_as923_3.toml /etc/chirpstack/region_as923_3.toml
+--- /data/files/region_as923_3.toml	2024-04-03 10:54:46.980056200 +0000
++++ /etc/chirpstack/region_as923_3.toml	2024-04-03 12:02:59.525156388 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_as923_3.tomls
+diff --unified --recursive --no-dereference /data/files/region_as923_4.toml /etc/chirpstack/region_as923_4.toml
+--- /data/files/region_as923_4.toml	2024-04-03 10:54:46.986876700 +0000
++++ /etc/chirpstack/region_as923_4.toml	2024-04-03 12:02:59.525156388 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_as923_4.tomls
+diff --unified --recursive --no-dereference /data/files/region_au915_0.toml /etc/chirpstack/region_au915_0.toml
+--- /data/files/region_au915_0.toml	2024-04-03 10:54:46.994737000 +0000
++++ /etc/chirpstack/region_au915_0.toml	2024-04-03 12:02:59.525156388 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_au915_0.tomls
+diff --unified --recursive --no-dereference /data/files/region_au915_1.toml /etc/chirpstack/region_au915_1.toml
+--- /data/files/region_au915_1.toml	2024-04-03 10:54:47.000600900 +0000
++++ /etc/chirpstack/region_au915_1.toml	2024-04-03 12:02:59.525156388 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_au915_1.tomls
+diff --unified --recursive --no-dereference /data/files/region_au915_2.toml /etc/chirpstack/region_au915_2.toml
+--- /data/files/region_au915_2.toml	2024-04-03 10:54:47.007434300 +0000
++++ /etc/chirpstack/region_au915_2.toml	2024-04-03 12:02:59.525156388 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_au915_2.tomls
+diff --unified --recursive --no-dereference /data/files/region_au915_3.toml /etc/chirpstack/region_au915_3.toml
+--- /data/files/region_au915_3.toml	2024-04-03 10:54:47.013293300 +0000
++++ /etc/chirpstack/region_au915_3.toml	2024-04-03 12:02:59.525156388 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_au915_3.tomls
+diff --unified --recursive --no-dereference /data/files/region_au915_4.toml /etc/chirpstack/region_au915_4.toml
+--- /data/files/region_au915_4.toml	2024-04-03 10:54:47.019159100 +0000
++++ /etc/chirpstack/region_au915_4.toml	2024-04-03 12:02:59.525156388 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_au915_4.tomls
+diff --unified --recursive --no-dereference /data/files/region_au915_5.toml /etc/chirpstack/region_au915_5.toml
+--- /data/files/region_au915_5.toml	2024-04-03 10:54:47.025986100 +0000
++++ /etc/chirpstack/region_au915_5.toml	2024-04-03 12:02:59.525156388 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_au915_5.tomls
+diff --unified --recursive --no-dereference /data/files/region_au915_6.toml /etc/chirpstack/region_au915_6.toml
+--- /data/files/region_au915_6.toml	2024-04-03 10:54:47.032822700 +0000
++++ /etc/chirpstack/region_au915_6.toml	2024-04-03 12:02:59.525156388 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_au915_6.tomls
+diff --unified --recursive --no-dereference /data/files/region_au915_7.toml /etc/chirpstack/region_au915_7.toml
+--- /data/files/region_au915_7.toml	2024-04-03 10:54:47.039662000 +0000
++++ /etc/chirpstack/region_au915_7.toml	2024-04-03 12:02:59.525156388 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_au915_7.tomls
+diff --unified --recursive --no-dereference /data/files/region_cn470_0.toml /etc/chirpstack/region_cn470_0.toml
+--- /data/files/region_cn470_0.toml	2024-04-03 10:54:47.046492300 +0000
++++ /etc/chirpstack/region_cn470_0.toml	2024-04-03 12:02:59.525156388 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_cn470_0.tomls
+diff --unified --recursive --no-dereference /data/files/region_cn470_1.toml /etc/chirpstack/region_cn470_1.toml
+--- /data/files/region_cn470_1.toml	2024-04-03 10:54:47.052352900 +0000
++++ /etc/chirpstack/region_cn470_1.toml	2024-04-03 12:02:59.525156388 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_cn470_1.tomls
+diff --unified --recursive --no-dereference /data/files/region_cn470_10.toml /etc/chirpstack/region_cn470_10.toml
+--- /data/files/region_cn470_10.toml	2024-04-03 10:54:47.059188400 +0000
++++ /etc/chirpstack/region_cn470_10.toml	2024-04-03 12:02:59.525156388 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_cn470_10.tomls
+diff --unified --recursive --no-dereference /data/files/region_cn470_11.toml /etc/chirpstack/region_cn470_11.toml
+--- /data/files/region_cn470_11.toml	2024-04-03 10:54:47.065050000 +0000
++++ /etc/chirpstack/region_cn470_11.toml	2024-04-03 12:02:59.525156388 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_cn470_11.tomls
+diff --unified --recursive --no-dereference /data/files/region_cn470_2.toml /etc/chirpstack/region_cn470_2.toml
+--- /data/files/region_cn470_2.toml	2024-04-03 10:54:47.071882000 +0000
++++ /etc/chirpstack/region_cn470_2.toml	2024-04-03 12:02:59.525156388 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_cn470_2.tomls
+diff --unified --recursive --no-dereference /data/files/region_cn470_3.toml /etc/chirpstack/region_cn470_3.toml
+--- /data/files/region_cn470_3.toml	2024-04-03 10:54:47.077740600 +0000
++++ /etc/chirpstack/region_cn470_3.toml	2024-04-03 12:02:59.525156388 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_cn470_3.tomls
+diff --unified --recursive --no-dereference /data/files/region_cn470_4.toml /etc/chirpstack/region_cn470_4.toml
+--- /data/files/region_cn470_4.toml	2024-04-03 10:54:47.083601900 +0000
++++ /etc/chirpstack/region_cn470_4.toml	2024-04-03 12:02:59.525156388 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_cn470_4.tomls
+diff --unified --recursive --no-dereference /data/files/region_cn470_5.toml /etc/chirpstack/region_cn470_5.toml
+--- /data/files/region_cn470_5.toml	2024-04-03 10:54:47.089462900 +0000
++++ /etc/chirpstack/region_cn470_5.toml	2024-04-03 12:02:59.535156541 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_cn470_5.tomls
+diff --unified --recursive --no-dereference /data/files/region_cn470_6.toml /etc/chirpstack/region_cn470_6.toml
+--- /data/files/region_cn470_6.toml	2024-04-03 10:54:47.095320900 +0000
++++ /etc/chirpstack/region_cn470_6.toml	2024-04-03 12:02:59.535156541 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_cn470_6.tomls
+diff --unified --recursive --no-dereference /data/files/region_cn470_7.toml /etc/chirpstack/region_cn470_7.toml
+--- /data/files/region_cn470_7.toml	2024-04-03 10:54:47.101228200 +0000
++++ /etc/chirpstack/region_cn470_7.toml	2024-04-03 12:02:59.535156541 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_cn470_7.tomls
+diff --unified --recursive --no-dereference /data/files/region_cn470_8.toml /etc/chirpstack/region_cn470_8.toml
+--- /data/files/region_cn470_8.toml	2024-04-03 10:54:47.106759000 +0000
++++ /etc/chirpstack/region_cn470_8.toml	2024-04-03 12:02:59.535156541 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_cn470_8.tomls
+diff --unified --recursive --no-dereference /data/files/region_cn470_9.toml /etc/chirpstack/region_cn470_9.toml
+--- /data/files/region_cn470_9.toml	2024-04-03 10:54:47.112622100 +0000
++++ /etc/chirpstack/region_cn470_9.toml	2024-04-03 12:02:59.535156541 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_cn470_9.tomls
+diff --unified --recursive --no-dereference /data/files/region_cn779.toml /etc/chirpstack/region_cn779.toml
+--- /data/files/region_cn779.toml	2024-04-03 10:54:47.118477300 +0000
++++ /etc/chirpstack/region_cn779.toml	2024-04-03 12:02:59.535156541 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_cn779.tomls
+diff --unified --recursive --no-dereference /data/files/region_eu433.toml /etc/chirpstack/region_eu433.toml
+--- /data/files/region_eu433.toml	2024-04-03 10:54:47.124339100 +0000
++++ /etc/chirpstack/region_eu433.toml	2024-04-03 12:02:59.535156541 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_eu433.tomls
+diff --unified --recursive --no-dereference /data/files/region_eu868.toml /etc/chirpstack/region_eu868.toml
+--- /data/files/region_eu868.toml	2024-04-03 10:54:47.130193800 +0000
++++ /etc/chirpstack/region_eu868.toml	2024-04-03 12:02:59.535156541 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_eu868.tomls
+diff --unified --recursive --no-dereference /data/files/region_in865.toml /etc/chirpstack/region_in865.toml
+--- /data/files/region_in865.toml	2024-04-03 10:54:47.136054900 +0000
++++ /etc/chirpstack/region_in865.toml	2024-04-03 12:02:59.535156541 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_in865.tomls
+diff --unified --recursive --no-dereference /data/files/region_ism2400.toml /etc/chirpstack/region_ism2400.toml
+--- /data/files/region_ism2400.toml	2024-04-03 10:54:47.143620700 +0000
++++ /etc/chirpstack/region_ism2400.toml	2024-04-03 12:02:59.535156541 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_ism2400.tomls
+diff --unified --recursive --no-dereference /data/files/region_kr920.toml /etc/chirpstack/region_kr920.toml
+--- /data/files/region_kr920.toml	2024-04-03 10:54:47.150122700 +0000
++++ /etc/chirpstack/region_kr920.toml	2024-04-03 12:02:59.535156541 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_kr920.tomls
+diff --unified --recursive --no-dereference /data/files/region_ru864.toml /etc/chirpstack/region_ru864.toml
+--- /data/files/region_ru864.toml	2024-04-03 10:54:47.155944400 +0000
++++ /etc/chirpstack/region_ru864.toml	2024-04-03 12:02:59.535156541 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_ru864.tomls
+diff --unified --recursive --no-dereference /data/files/region_us915_0.toml /etc/chirpstack/region_us915_0.toml
+--- /data/files/region_us915_0.toml	2024-04-03 10:54:47.161803300 +0000
++++ /etc/chirpstack/region_us915_0.toml	2024-04-03 12:02:59.535156541 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_us915_0.tomls
+diff --unified --recursive --no-dereference /data/files/region_us915_1.toml /etc/chirpstack/region_us915_1.toml
+--- /data/files/region_us915_1.toml	2024-04-03 10:54:47.167661500 +0000
++++ /etc/chirpstack/region_us915_1.toml	2024-04-03 12:02:59.535156541 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_us915_1.tomls
+diff --unified --recursive --no-dereference /data/files/region_us915_2.toml /etc/chirpstack/region_us915_2.toml
+--- /data/files/region_us915_2.toml	2024-04-03 10:54:47.173712300 +0000
++++ /etc/chirpstack/region_us915_2.toml	2024-04-03 12:02:59.535156541 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_us915_2.tomls
+diff --unified --recursive --no-dereference /data/files/region_us915_3.toml /etc/chirpstack/region_us915_3.toml
+--- /data/files/region_us915_3.toml	2024-04-03 10:54:47.180549000 +0000
++++ /etc/chirpstack/region_us915_3.toml	2024-04-03 12:02:59.535156541 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_us915_3.tomls
+diff --unified --recursive --no-dereference /data/files/region_us915_4.toml /etc/chirpstack/region_us915_4.toml
+--- /data/files/region_us915_4.toml	2024-04-03 10:54:47.186406800 +0000
++++ /etc/chirpstack/region_us915_4.toml	2024-04-03 12:02:59.535156541 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_us915_4.tomls
+diff --unified --recursive --no-dereference /data/files/region_us915_5.toml /etc/chirpstack/region_us915_5.toml
+--- /data/files/region_us915_5.toml	2024-04-03 10:54:47.193241900 +0000
++++ /etc/chirpstack/region_us915_5.toml	2024-04-03 12:02:59.535156541 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_us915_5.tomls
+diff --unified --recursive --no-dereference /data/files/region_us915_6.toml /etc/chirpstack/region_us915_6.toml
+--- /data/files/region_us915_6.toml	2024-04-03 10:54:47.199103400 +0000
++++ /etc/chirpstack/region_us915_6.toml	2024-04-03 12:02:59.535156541 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_us915_6.tomls
+diff --unified --recursive --no-dereference /data/files/region_us915_7.toml /etc/chirpstack/region_us915_7.toml
+--- /data/files/region_us915_7.toml	2024-04-03 10:54:47.204962500 +0000
++++ /etc/chirpstack/region_us915_7.toml	2024-04-03 12:02:59.535156541 +0000
+@@ -48,7 +48,7 @@
+         share_name="chirpstack"
+ 
+         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+-        server="tcp://localhost:1883"
++        server="__server__"
+ 
+         # Connect with the given username (optional)
+         username=""
+Only in /etc/chirpstack/: region_us915_7.tomls

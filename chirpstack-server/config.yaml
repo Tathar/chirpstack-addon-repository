@@ -12,8 +12,10 @@ homeassistant_api: true
 # apparmor: true
 options:
   mqtt_server: "tcp://core-mosquitto:1883/"
+  region_gateway: "eu868"
 schema:
   mqtt_server: str
+  region_gateway: str
 ports:
   8080/tcp: 8080
   1700/udp: 1700
